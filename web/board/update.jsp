@@ -39,7 +39,7 @@
 <div class="container-fluid">
     <div class="row align-items-center vh-100 justify-content-center">
         <div class="row">
-            <div class="col-10">g
+            <div class="col-10">
                 <form action="/board/update_logic.jsp?id=<%=id%>" method="post">
                     <table class="table table-striped table-dark">
                         <tr>
