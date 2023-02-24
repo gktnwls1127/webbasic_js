@@ -2,13 +2,7 @@
 <%@ page import="connector.ConnectionMaker" %>
 <%@ page import="connector.MySqlConnectioMaker" %>
 <%@ page import="controller.BoardController" %>
-<%@ page import="model.BoardDTO" %><%--
-  Created by IntelliJ IDEA.
-  User: BIT
-  Date: 2023-02-10
-  Time: 오후 2:43
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="model.BoardDTO" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -16,6 +10,7 @@
 </head>
 <body>
 <%
+    request.setCharacterEncoding("UTF-8");
     UserDTO logIn = (UserDTO) session.getAttribute("logIn");
     if (logIn == null){
         response.sendRedirect("/index.jsp");
